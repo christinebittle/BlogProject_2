@@ -48,9 +48,9 @@ namespace BlogProject.Controllers
             {
                 //Access Column information by the DB column name as an index
                 int AuthorId = (int)ResultSet["authorid"];
-                string AuthorFname = (string)ResultSet["authorfname"];
-                string AuthorLname = (string)ResultSet["authorlname"];
-                string AuthorBio = (string)ResultSet["authorbio"];
+                string AuthorFname = ResultSet["authorfname"].ToString();
+                string AuthorLname = ResultSet["authorlname"].ToString();
+                string AuthorBio = ResultSet["authorbio"].ToString();
 
                 Author NewAuthor = new Author();
                 NewAuthor.AuthorId = AuthorId;
@@ -95,9 +95,9 @@ namespace BlogProject.Controllers
             {
                 //Access Column information by the DB column name as an index
                 int AuthorId = (int)ResultSet["authorid"];
-                string AuthorFname = (string)ResultSet["authorfname"];
-                string AuthorLname = (string)ResultSet["authorlname"];
-                string AuthorBio = (string)ResultSet["authorbio"];
+                string AuthorFname = ResultSet["authorfname"].ToString();
+                string AuthorLname = ResultSet["authorlname"].ToString();
+                string AuthorBio = ResultSet["authorbio"].ToString();
 
                 NewAuthor.AuthorId = AuthorId;
                 NewAuthor.AuthorFname = AuthorFname;
