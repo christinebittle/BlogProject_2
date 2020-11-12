@@ -1,7 +1,7 @@
 # BlogProject_2
 This is the second part of our blog project!
 
-[Video which goes over codebase](https://youtu.be/uP2kH8tFXIQ)
+[Video which goes over codebase](https://www.youtube.com/watch?v=rluweOu84r0)
 
 ## How to Install:
 - Step 1 : Download [MAMP](https://www.mamp.info/en/downloads/) or similar MySQL environment
