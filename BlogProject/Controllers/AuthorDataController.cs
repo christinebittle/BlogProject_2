@@ -52,6 +52,7 @@ namespace BlogProject.Controllers
                 string AuthorLname = ResultSet["authorlname"].ToString();
                 string AuthorBio = ResultSet["authorbio"].ToString();
 
+                
                 Author NewAuthor = new Author();
                 NewAuthor.AuthorId = AuthorId;
                 NewAuthor.AuthorFname = AuthorFname;
@@ -70,7 +71,11 @@ namespace BlogProject.Controllers
         }
 
 
-
+        /// <summary>
+        /// Finds an author in the system given an ID
+        /// </summary>
+        /// <param name="id">The author primary key</param>
+        /// <returns>An author object</returns>
         [HttpGet]
         public Author FindAuthor(int id)
         {
